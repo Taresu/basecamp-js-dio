@@ -1,4 +1,7 @@
 function compareNumbers(num1, num2) {
+    if (!num1 || !num2) console.log("Defina dois números!");
+
+
     const firstString = createFirstString(num1, num2);
     const lastString = createLastString(num1, num2);
 
@@ -15,14 +18,18 @@ function createFirstString(num1, num2) {
 
 function createLastString(num1, num2) {
     const sum = num1 + num2;
+    const sumEqual10 = sum === 10;
+    const sumEqual20 = sum === 20;
     const compare10 = sum > 10;
     const compare20 = sum > 20;
 
     let result10 = 'menor';
     let result20 = 'menor';
 
-    if (compare10) { result10 = 'maior' };
-    if (compare20) { result20 = 'maior' };
+    if (sumEqual10 || sumEqual20) { return `Sua soma é ${sum}, que não é menor/maior que 10 e nem menor/maior que 20.\n` };
+
+    if (compare10) { result10 = 'maior'; }
+    if (compare20) { result20 = 'maior'; }
 
     return `Sua soma é ${sum}, que é ${result10} que 10 e ${result20} que 20.\n`;
 }
