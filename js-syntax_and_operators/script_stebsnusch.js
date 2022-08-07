@@ -2,10 +2,10 @@ function compareNumbers(num1, num2) {
     if (!num1 || !num2) console.log("Defina dois números!");
 
 
-    const firstString = createFirstString(num1, num2);
-    const lastString = createLastString(num1, num2);
+    const FIRST_STRING = createFirstString(num1, num2);
+    const LAST_STRING = createLastString(num1, num2);
 
-    return `${firstString} ${lastString}`;
+    return `${FIRST_STRING} ${LAST_STRING}`;
 }
 
 function createFirstString(num1, num2) {
@@ -17,21 +17,21 @@ function createFirstString(num1, num2) {
 }
 
 function createLastString(num1, num2) {
-    const sum = num1 + num2;
-    const sumEqual10 = sum === 10;
-    const sumEqual20 = sum === 20;
-    const compare10 = sum > 10;
-    const compare20 = sum > 20;
+    const SUM = num1 + num2;
+    const SUM_EQUAL_10 = SUM === 10;
+    const SUM_EQUAL_20 = SUM === 20;
+    const COMPARE_10 = SUM > 10;
+    const COMPARE_20 = SUM > 20;
 
     let result10 = 'menor';
     let result20 = 'menor';
 
-    if (sumEqual10 || sumEqual20) { return `Sua soma é ${sum}, que não é menor/maior que 10 e nem menor/maior que 20.\n` };
+    if (SUM_EQUAL_10 || SUM_EQUAL_20) { return `Sua soma é ${SUM}, que não é menor/maior que 10 e nem menor/maior que 20.\n` };
 
-    if (compare10) { result10 = 'maior'; }
-    if (compare20) { result20 = 'maior'; }
+    if (COMPARE_10) { result10 = 'maior'; }
+    if (COMPARE_20) { result20 = 'maior'; }
 
-    return `Sua soma é ${sum}, que é ${result10} que 10 e ${result20} que 20.\n`;
+    return `Sua soma é ${SUM}, que é ${result10} que 10 e ${result20} que 20.\n`;
 }
 
 //Exemplos de combinações condicionais com números diferentes
