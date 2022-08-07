@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    margin: 10px;
+    text-align: center;
+}
+
+.title {
+    margin: auto;
+    color: green;
+}
+
+input {
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#task-input {
+    color: gray;
+}
+
+button {
+    background-color: lightgreen;
+    border-radius: 3px;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
