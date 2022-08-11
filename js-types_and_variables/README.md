@@ -1,6 +1,18 @@
 # Variáveis e Tipos
 
-Neste repositório você encontrará a atividade prática proposta pelo curso "Variáveis e Tipos" do Basecamp de Javascript da [Digital Innovation One](https://digitalinnovation.one/).
+Neste repositório, é feita a atividade prática proposta pelo curso "Variáveis e Tipos", do Basecamp de Javascript da [Digital Innovation One](https://digitalinnovation.one/).
+
+## Recordando: 
+### *var x let x const*
+
+|                |     **var**     | **let** | **const** |
+|----------------|:---------------:|:-------:|:---------:|
+| **escopo**     | global ou local |  bloco  |   bloco   |
+| **redeclarar** |       sim       |   não   |    não    |
+| **reatribuir** |       sim       |   sim   |    não    |
+| **hoisting**   |       sim       |   não   |    não    |
+
+
 
 ## Atividade 1
 
